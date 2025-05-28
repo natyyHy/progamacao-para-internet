@@ -1,0 +1,33 @@
+<input type="number" id="num1">
+<input type="number" id="num2">
+
+<label><input type="radio" name="op" value="soma">+</label>
+<label><input type="radio" name="op" value="sub">-</label>
+<label><input type="radio" name="op" value="mult">*</label>
+<label><input type="radio" name="op" value="div">/</label>
+
+<button onclick="calcular()">Calcular</button>
+<div id="resultado"></div>
+
+<script>
+function calcular() {
+    const n1 = parseFloat(document.getElementById("num1").value);
+    const n2 = parseFloat(document.getElementById("num2").value);
+    const op = document.querySelector('input[name="op"]:checked');
+
+    if(!op) {
+        document.getElementById("resultado").textContent = "Selecione uma operação!";
+        return;
+    }
+
+    let res;
+    switch(op.value) {
+        case "soma": res = n1 + n2; break;
+        case "sub": res = n1 - n2; break;
+        case "mult": res = n1 * n2; break;
+        case "div": res = n1 / n2; break;
+    }
+
+    document.getElementById("resultado").textContent = "Resultado: " + res;
+}
+</script>

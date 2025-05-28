@@ -1,0 +1,13 @@
+<input type="text" id="opcao">
+<button onclick="adicionar()">Adicionar</button>
+
+<select id="seletor"></select>
+
+<script>
+function adicionar() {
+    const texto = document.getElementById("opcao").value;
+    const option = document.createElement("option");
+    option.text = texto;
+    document.getElementById("seletor").add(option);
+}
+</script>

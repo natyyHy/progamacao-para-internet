@@ -1,0 +1,10 @@
+<input type="text" id="origem">
+<input type="text" id="destino">
+<button onclick="copiarTexto()">Copiar</button>
+
+<script>
+function copiarTexto() {
+    const origem = document.getElementById("origem").value;
+    document.getElementById("destino").value = origem.toUpperCase();
+}
+</script>

@@ -1,0 +1,21 @@
+<p id="demo">Olá!</p>
+<button onclick="mudarTexto()">Mudar Texto</button>
+
+<script>
+function mudarTexto() {
+    document.getElementById("demo").textContent = "Texto alterado!";
+}
+</script>
+
+<p>Parágrafo 1</p>
+<p>Parágrafo 2</p>
+<button onclick="listarParagrafos()">Listar</button>
+
+<script>
+function listarParagrafos() {
+    const paragrafos = document.getElementsByTagName("p");
+    for(let i = 0; i < paragrafos.length; i++) {
+        console.log(paragrafos[i].textContent);
+    }
+}
+</script>
