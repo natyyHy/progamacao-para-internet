@@ -1,4 +1,4 @@
-# Estudo sobre o DOM
+## 1)  
 
 ### a) MDN
 
@@ -18,7 +18,7 @@
 
 ---
 
-## 5) Diferença entre `textContent`, `innerText` e `innerHTML`
+## 5)
 
 A principal diferença entre textContent, innerText e innerHTML reside na forma como recuperam e manipulam o conteúdo textual dentro de um elemento HTML. textContent retorna o texto bruto, incluindo espaçamentos e até mesmo texto oculto, sem as tags HTML. innerText retorna o texto que seria visível no navegador, ignorando algumas formatações e tags, e innerHTML retorna o HTML completo, incluindo tags e conteúdo.
 
